@@ -7,7 +7,7 @@
         <input
           type="text"
           placeholder="Search Facebook"
-          class="w-full ml-2 bg-transparent placeholder-gray-600 font-light text-sm"
+          class="w-full mr-2 focus:outline-none ml-2 bg-transparent placeholder-gray-600 font-light text-sm"
         >
       </div>
     </div>
@@ -38,7 +38,7 @@
     <div class="w-2/5 flex items-center justify-between">
       <div class="flex items-center justify-between">
         <img class="h-8 rounded-full mr-1" src="https://randomuser.me/api/portraits/men/76.jpg" alt="profile-image">
-        <span class="text-base">Florian</span>
+        <span class="text-sm font-semibold">Florian</span>
       </div>
       <div class="space-x-3">
         <button
