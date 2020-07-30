@@ -33,8 +33,37 @@
         <span class="tooltip-text py-2 px-3 absolute z-50 inline-block text-xs rounded-lg bg-gray-700 text-gray-300 font-light">Groups</span>
       </div>
     </div>
-    <div class="w-1/3">
-      Lorem, ipsum. 
+    <div class="w-1/3 flex items-center justify-between">
+      <div class="flex items-center justify-between">
+        <img class="h-8 rounded-full mr-1" src="https://randomuser.me/api/portraits/men/76.jpg" alt="profile-image">
+        <span class="text-base">Florian</span>
+      </div>
+      <div class="space-x-2">
+        <button
+          type="button"
+          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <button
+          type="button"
+          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>
+        </button>
+        <button
+          type="button"
+          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+        </button>
+        <button
+          type="button"
+          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+      </div>
     </div>
   </header>
 </template>
