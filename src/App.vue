@@ -1,8 +1,8 @@
 <template>
-  <header class="flex shadow px-3 space-x-10">
-    <div class="w-1/3 flex items-center">
+  <header class="flex justify-between shadow px-3 space-x-10">
+    <div class="flex items-center">
       <img class="h-10 mr-2" src="@/assets/logo.png" alt="logo">
-      <div class="w-full flex items-center bg-gray-200 rounded-full p-2">
+      <div class="w-56 flex items-center bg-gray-200 rounded-full p-2">
         <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
         <input
           type="text"
@@ -11,7 +11,7 @@
         >
       </div>
     </div>
-    <div class="w-3/4 flex items-center justify-between">
+    <div class="max-w-2xl flex flex-1 items-center justify-between">
       <div class="tooltip relative cursor-pointer p-3 px-10 border-b-2 border-blue-600 text-blue-600">
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
         <span class="tooltip-text py-2 px-3 text-center absolute left-0 right-0 mt-4 z-50 inline-block text-xs rounded-lg bg-gray-700 text-gray-300 font-light">Newsfeed</span>
@@ -35,37 +35,35 @@
         <span class="tooltip-text py-2 px-3 text-center absolute left-0 right-0 mt-4 z-50 inline-block text-xs rounded-lg bg-gray-700 text-gray-300 font-light">Groups</span>
       </div>
     </div>
-    <div class="w-2/5 flex items-center justify-end space-x-4">
+    <div class="flex items-center justify-end space-x-4">
       <div class="flex items-center justify-between">
         <img class="h-8 rounded-full mr-1" src="https://randomuser.me/api/portraits/men/76.jpg" alt="profile-image">
         <span class="text-sm font-semibold">Florian</span>
       </div>
-      <div class="space-x-3">
-        <button
-          type="button"
-          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
-        >
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-        </button>
-        <button
-          type="button"
-          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
-        >
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>
-        </button>
-        <button
-          type="button"
-          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
-        >
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
-        </button>
-        <button
-          type="button"
-          class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
-        >
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </button>
-      </div>
+      <button
+        type="button"
+        class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+      </button>
+      <button
+        type="button"
+        class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"></path></svg>
+      </button>
+      <button
+        type="button"
+        class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+      </button>
+      <button
+        type="button"
+        class="bg-gray-300 rounded-full p-2 hover:bg-gray-400"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
     </div>
   </header>
 </template>
