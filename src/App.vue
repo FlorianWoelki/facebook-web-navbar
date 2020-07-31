@@ -51,7 +51,7 @@
           </button>
           <div v-if="isAddMenuOpen" class="absolute -ml-48" style="width: 360px">
             <div class="bg-white shadow-xl rounded-md py-4">
-              <h1 class="px-4 font-bold text-2xl mb-2">Create</h1>
+              <h1 class="px-4 font-semibold text-2xl mb-2">Create</h1>
               <div class="cursor-pointer mx-2 flex items-center space-x-3 leading-5 rounded-lg p-2 hover:bg-gray-200">
                 <div class="flex items-center justify-center bg-gray-300 rounded-full text-gray-700 p-2">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
