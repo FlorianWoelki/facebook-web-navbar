@@ -49,29 +49,14 @@
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
           </button>
-          <div v-if="isAddMenuOpen" class="absolute -ml-48" style="width: 360px">
-            <div class="bg-white shadow-xl rounded-md py-4">
-              <h1 class="px-4 font-semibold text-2xl mb-2">Create</h1>
-              <div class="cursor-pointer mx-2 flex items-center space-x-3 leading-5 rounded-lg p-2 hover:bg-gray-200">
-                <div class="flex items-center justify-center bg-gray-300 rounded-full text-gray-700 p-2">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
-                </div>
-                <div>
-                  <h6 class="text-gray-900 text-base">Post</h6>
-                  <span class="font-light text-gray-600 text-xs">Share a post in the News Feed.</span>
-                </div>
-              </div>
-              <div class="cursor-pointer mx-2 flex items-center space-x-3 leading-5 rounded-lg p-2 hover:bg-gray-200">
-                <div class="flex items-center justify-center bg-gray-300 rounded-full text-gray-700 p-2">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
-                </div>
-                <div>
-                  <h6 class="text-gray-900 text-base">Story</h6>
-                  <span class="font-light text-gray-600 text-xs">Share a foto or write something</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <MenuList v-if="isAddMenuOpen" title="Create">
+            <MenuListItem title="Post" subtitle="Share a post in the News Feed.">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
+            </MenuListItem>
+            <MenuListItem title="Story" subtitle="Share a photo or write something">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+            </MenuListItem>
+          </MenuList>
         </div>
         <button
           type="button"
@@ -97,7 +82,15 @@
 </template>
 
 <script>
+import MenuList from '@/components/MenuList.vue';
+import MenuListItem from '@/components/MenuListItem.vue';
+
 export default {
+  components: {
+    MenuList,
+    MenuListItem,
+  },
+
   data() {
     return {
       isAddMenuOpen: false,
