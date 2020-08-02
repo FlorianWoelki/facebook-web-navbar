@@ -44,11 +44,12 @@
         <div class="relative">
           <button
             type="button"
-            class="bg-gray-300 rounded-full p-2 hover:bg-gray-400 focus:outline-none focus:bg-blue-100 focus:text-blue-700"
+            class="relative z-10 bg-gray-300 rounded-full p-2 hover:bg-gray-400 focus:outline-none focus:bg-blue-100 focus:text-blue-700"
             @click="isAddMenuOpen = !isAddMenuOpen"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
           </button>
+          <button v-if="isAddMenuOpen" @click="isAddMenuOpen = false" tabindex="-1" class="fixed inset-0 h-full w-full cursor-default"></button>
           <MenuList v-if="isAddMenuOpen" title="Create">
             <MenuListItem title="Post" subtitle="Share a post in the News Feed.">
               <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
